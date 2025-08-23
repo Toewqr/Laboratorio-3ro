@@ -2,22 +2,28 @@ package TrabajoGrupal_0;
 
 public class FabricaMoto extends FabricaVehiculos{
 
-    @Override
+ 
     public void crearCarroceria() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'crearCarroceria'");
+
+        System.out.println("Preparando la carrocería de Moto");
+     
     }
 
-    @Override
+
     public void crearMotor() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'crearMotor'");
+    System.out.println("Preparando el motor de la moto");
+
+   
     }
 
-    @Override
+
     public void ensamblar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'ensamblar'");
+
+        System.out.println("Ensamblando la moto...");
+
+
+        System.out.println("Moto lista :D");
+ 
     }
 
 }
