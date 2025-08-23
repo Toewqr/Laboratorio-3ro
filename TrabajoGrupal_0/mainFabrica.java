@@ -4,6 +4,7 @@ public class mainFabrica {
 
     public static void main(String[] args) {
         System.out.println("HOLAAAAAAAA :D");
+        System.out.println("UWU");
         
     }
 
