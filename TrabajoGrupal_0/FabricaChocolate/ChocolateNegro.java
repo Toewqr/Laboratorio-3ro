@@ -3,9 +3,9 @@ package TrabajoGrupal_0.FabricaChocolate;
 public class ChocolateNegro implements Chocolate {
 
     @Override
-    public void preparar() {
-        System.out.println(Thread.currentThread().getName() +" esta Preparando chocolate Negro 🍫");
-        System.out.println(Thread.currentThread().getName() +"  produjo un chocolate Negro 🍫");
+    public void preparar(String n) {
+        System.out.println(n +" Prepara chocolate Negro 🍫");
+        System.out.println(n +" produjo un chocolate Negro 🍫");
     }
     
 }

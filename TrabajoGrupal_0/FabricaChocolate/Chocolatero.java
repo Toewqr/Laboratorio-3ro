@@ -15,7 +15,7 @@ public class Chocolatero implements Runnable {
     public void run() {
         Chocolate chocolate = fabrica.crearChocolate();
         System.out.println(nombre + " toma turno en la fabrica de chocolate");
-        chocolate.preparar();
+        chocolate.preparar(nombre);
     }
     
 }
