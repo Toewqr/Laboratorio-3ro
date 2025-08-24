@@ -3,19 +3,28 @@ package TrabajoGrupal_0.FabricaChocolate;
 public class Chocolatero implements Runnable {
     private FabricaChocolatera fabrica; 
     private String nombre;
+  
 
     
     public Chocolatero (String nombre, FabricaChocolatera fab){
         this.fabrica=fab;
-        this.nombre= nombre;
+        this.nombre = nombre;
 
     }
-    
-    @Override
+ 
     public void run() {
-        Chocolate chocolate = fabrica.crearChocolate();
-        System.out.println(nombre + " toma turno en la fabrica de chocolate");
-        chocolate.preparar(nombre);
+
+        try {
+            fabrica.prepararMezcla(nombre);
+            Thread.sleep(500);
+            fabrica.ponerMolde(nombre);
+            Thread.sleep(500);
+            fabrica.finalizar(nombre);
+
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+        
     }
     
 }

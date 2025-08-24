@@ -1,4 +1,4 @@
-package TrabajoGrupal_0;
+package TrabajoGrupal_0.FabricaAuto;
 
 public class FabricaCamion extends FabricaVehiculos {
 

@@ -1,11 +1,13 @@
 package TrabajoGrupal_0.FabricaChocolate;
 
 public class ChocolateBlanco implements Chocolate {
+    public void envolver(String n){
 
-    @Override
-    public void preparar(String n) {
-        System.out.println(n +" esta Preparando chocolate Blanco 🍶");
-        System.out.println(n+" produjo un chocolate Blanco 🍶");       
+
+        System.out.println(n + " envuelve la tanda de chocolates blancos");
     }
+
+ 
+     
     
 }

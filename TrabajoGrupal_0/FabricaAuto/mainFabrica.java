@@ -1,4 +1,4 @@
-package TrabajoGrupal_0;
+package TrabajoGrupal_0.FabricaAuto;
 
 import java.time.LocalTime;
 import java.util.concurrent.Executors;

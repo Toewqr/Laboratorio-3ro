@@ -11,19 +11,26 @@ public class Main {
         FabricaChocolatera fabricaBlanca = new FabricaChocolateBlanco();
 
         // Chocolateros que usan cada fábrica
-        String nombre = "juan";
-        Chocolatero juan = new Chocolatero (nombre,fabricaNegra);
-        nombre = "maria";
-        Chocolatero maria = new Chocolatero (nombre,fabricaBlanca);
+        Chocolatero juan = new Chocolatero ("Juan",fabricaNegra);
+       
+        Chocolatero maria = new Chocolatero ("Maria",fabricaBlanca);
+         Chocolatero ignacio = new Chocolatero ("Ignacio",fabricaBlanca);
+         Chocolatero zoe = new Chocolatero ("Zoe",fabricaBlanca);
+
+
+
 
         // Scheduler
         ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(2);
 
         scheduler.scheduleAtFixedRate(juan, 0, 3, TimeUnit.SECONDS);
         scheduler.scheduleAtFixedRate(maria, 0, 6, TimeUnit.SECONDS);
+        scheduler.scheduleAtFixedRate(ignacio, 0, 6, TimeUnit.SECONDS);
+         scheduler.scheduleAtFixedRate(zoe, 0, 6, TimeUnit.SECONDS);
+
 
          scheduler.schedule(() -> {
-            System.out.println("Fin de la producción 👋");
+            System.out.println("Fin de la producción");
             scheduler.shutdown();
         }, 20, TimeUnit.SECONDS);
 
