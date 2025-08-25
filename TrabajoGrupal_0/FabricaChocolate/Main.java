@@ -21,7 +21,7 @@ public class Main {
 
 
         // Scheduler
-        ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(2);
+        ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
 
         scheduler.scheduleAtFixedRate(juan, 0, 3, TimeUnit.SECONDS);
         scheduler.scheduleAtFixedRate(maria, 0, 6, TimeUnit.SECONDS);
