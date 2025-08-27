@@ -1,8 +1,14 @@
 package TrabajoGrupal_0.FabricaChocolate;
 
-public interface Chocolate {
+abstract class Chocolate {
 
-    void envolver(String nombre);
+    protected String tipo = "";
+
+    void envolver(String nombre){
+
+     System.out.println(nombre + " envuelve la tanda de chocolates " + this.tipo);
+
+    }
 
 
 

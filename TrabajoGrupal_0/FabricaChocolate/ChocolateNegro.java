@@ -1,14 +1,9 @@
 package TrabajoGrupal_0.FabricaChocolate;
 
-public class ChocolateNegro implements Chocolate {
+public class ChocolateNegro extends Chocolate {
+    {
 
-     public void envolver(String n){
+        this.tipo = "negros";
 
-
-        System.out.println(n + " envuelve la tanda de chocolates negros");
     }
-
-
-
-    
 }
