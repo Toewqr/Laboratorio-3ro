@@ -19,7 +19,7 @@ public class Chocolatero implements Runnable {
             Thread.sleep(500);
             fabrica.ponerMolde(nombre);
             Thread.sleep(500);
-            fabrica.finalizar(nombre);
+            fabrica.terminarTanda(nombre);
 
         } catch (Exception e) {
             // TODO: handle exception

@@ -16,7 +16,7 @@ abstract class FabricaChocolatera {
            System.out.println(n + " Coloca la mezcla de chocolate " + this.tipoCh+ " en el molde.");
 
     }
-    public void finalizar(String n){
+    public void terminarTanda(String n){
 
           try {
             System.out.println(n + " termina la tanda de chocolate  " + this.tipoCh + ". :)");
